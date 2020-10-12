@@ -265,6 +265,50 @@ h2 {
 @media only screen and (min-width:768px) {
     .logo {
         width: 33%;
+        float: left;
+    }
+}
+
+
+/** NAVEGACION PRINCIPAL **/
+
+.navegacion-principal {
+    display: none;
+}
+
+.navegacion-principal a:hover {
+    background-color: #f34918;
+}
+
+.navegacion-principal a {
+    font-family: 'Oswald', sans-serif;
+    color: whitesmoke;
+    font-size: 1.3em;
+    text-transform: uppercase;
+    text-decoration: none;
+    transition: all 1s ease;
+}
+
+.navegacion-principal a:last-child {
+    border: 2px solid #f34918;
+    color: #f34918;
+}
+
+.navegacion-principal a:last-child:hover {
+    color: whitesmoke;
+}
+
+@media only screen and (min-width:768px) {
+    .navegacion-principal {
+        width: 67%;
+        float: right;
+        text-align: right;
+        display: block;
+    }
+    .navegacion-principal a {
+        margin-right: 10px;
+        padding: 10px 10px;
+        display: inline-block;
     }
 }
 
