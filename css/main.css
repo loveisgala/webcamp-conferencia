@@ -313,6 +313,30 @@ h2 {
 }
 
 
+/**MENU MOVIL **/
+
+.menu-movil {
+    width: 60px;
+    display: block;
+    float: right;
+    text-align: right;
+    margin-top: 12px;
+}
+
+@media only screen and (min-width:768px) {
+    .menu-movil {
+        display: none;
+    }
+}
+
+.menu-movil span {
+    height: 8px;
+    margin-bottom: 6px;
+    background-color: whitesmoke;
+    display: block;
+}
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
