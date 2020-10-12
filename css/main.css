@@ -151,8 +151,29 @@ body {
     }
 }
 
+.seccion {
+    padding: 30px 0;
+}
+
+.seccion p {
+    font-size: 1.2em;
+    text-align: center;
+}
+
 h2 {
     font-family: 'Oswald', sans-serif;
+    font-size: 2.4em;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h2::after {
+    content: '';
+    margin: 0 auto;
+    background-image: url(../img/separador.png);
+    height: 30px;
+    width: 100px;
+    display: block;
 }
 
 
@@ -256,6 +277,7 @@ h2 {
 
 .logo {
     width: 80%;
+    float: left;
 }
 
 .logo img {
@@ -265,7 +287,6 @@ h2 {
 @media only screen and (min-width:768px) {
     .logo {
         width: 33%;
-        float: left;
     }
 }
 
@@ -287,6 +308,10 @@ h2 {
     text-transform: uppercase;
     text-decoration: none;
     transition: all 1s ease;
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
 }
 
 .navegacion-principal a:last-child {
@@ -309,6 +334,9 @@ h2 {
         margin-right: 10px;
         padding: 10px 10px;
         display: inline-block;
+        width: auto;
+        text-align: center;
+        margin: 0 10px 0 0;
     }
 }
 
@@ -321,6 +349,10 @@ h2 {
     float: right;
     text-align: right;
     margin-top: 12px;
+}
+
+.menu-movil:hover {
+    cursor: pointer;
 }
 
 @media only screen and (min-width:768px) {
