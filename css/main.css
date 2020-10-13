@@ -543,13 +543,13 @@ menu-programa a.activo::after {
 .invitado img {
     max-width: 100%;
     filter: gray;
-    -webkit-filter: grayscale(1);
-    -webkit-transition: all .5s ease-in-out;
+    filter: grayscale(1);
+    transition: all .5s ease-in-out;
 }
 
 .invitado img:hover {
-    -webkit-filter: grayscale(0);
-    -webkit-transform: scale(1.1);
+    filter: grayscale(0);
+    transform: scale(1.1);
 }
 
 .invitado p {
@@ -564,7 +564,7 @@ menu-programa a.activo::after {
     font-family: 'Oswald', sans-serif;
     color: #fe4918;
     text-transform: uppercase;
-    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
 }
 
 .invitado:hover p {
