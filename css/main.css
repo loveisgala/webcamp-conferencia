@@ -590,7 +590,7 @@ menu-programa a.activo::after {
 
 .contador {
     position: relative;
-    height: auto;
+    height: 100%;
 }
 
 .contador::before {
