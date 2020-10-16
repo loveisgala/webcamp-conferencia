@@ -815,6 +815,23 @@ blockquote p:before {
 }
 
 
+/**CONTADOR**/
+
+.cuenta-regresiva ul li {
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.6rem;
+    text-align: center;
+}
+
+@media only screen and (min-width:768px) {
+    .cuenta-regresiva ul li {
+        width: 25%;
+        float: left;
+    }
+}
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
