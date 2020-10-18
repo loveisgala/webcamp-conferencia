@@ -68,8 +68,25 @@
 
     <!--SECCION-->
     <section class="seccion contenedor">
-        <h2>La mejor conferencia de Diseño Web en Español</h2>
-        <p class="seccion-p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel error facilis temporibus hic consequatur accusantium, cupiditate alias quam, consectetur vero harum recusandae esse eveniet voluptas at consequuntur blanditiis, aliquid officia?</p>
+        <h2>Registro de Usuarios</h2>
+        <form action="index.html" class="registro" id="registro" method="POST"></form>
+
+        <!--DATOS USUARIOS-->
+        <div id="datos_usuario" class="registro caja clearfix">
+            <div class="campo">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="tu Nombre" required>
+            </div>
+            <div class="campo">
+                <label for="apellido">Apellido:</label>
+                <input type="text" id="apellido" name="apellido" placeholder="tu Apellido" required>
+            </div>
+            <div class="campo">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="tu E-mail" required>
+            </div>
+            <div id="error"></div>
+        </div>
     </section>
 
     <!--FOOTER-->
