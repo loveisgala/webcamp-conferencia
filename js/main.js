@@ -28,6 +28,10 @@
 
         calcular.addEventListener('click', calcularMontos);
 
+        pase_dia.addEventListener('blur', mostrarDias);
+        pase_dosdias.addEventListener('blur', mostrarDias);
+        pase_completo.addEventListener('blur', mostrarDias);
+
         function calcularMontos(event) {
             event.preventDefault();
             if (regalo.value === '') {
@@ -79,5 +83,28 @@
 
             }
         }
+
+        function mostrarDias() {
+            var boletosDia = parseInt(pase_dia.value, 10) || 0,
+                boletos2Dias = parseInt(pase_dosdias.value, 10) || 0,
+                boletoCompleto = parseInt(pase_completo.value, 10) || 0;
+
+            var diasElegidos = [];
+
+            if (boletosDia > 0) {
+                diasElegidos.push('viernes');
+            }
+            if (boletos2Dias > 0) {
+                diasElegidos.push('viernes', 'sabado');
+            }
+            if (boletoCompleto > 0) {
+                diasElegidos.push('viernes', 'sabado', 'domingo');
+            }
+            for (var i = 0; i < diasElegidos.length; i++) {
+                document.getElementById(diasElegidos[i]).style.display = "block";
+            }
+        }
+
+
     }); //DOM CONTENT LOADED
 })();
