@@ -844,8 +844,8 @@ blockquote p:before {
     margin-top: 20px;
 }
 
-.contenedor>div {
-    color: #ffffff;
+.site-footer>div {
+    color: white;
     padding: 0px 20px;
     font-size: 12px;
 }
