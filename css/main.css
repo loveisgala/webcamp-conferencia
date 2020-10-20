@@ -220,7 +220,7 @@ ul {
     padding: 0;
 }
 
-.button::hover {
+.button:hover {
     background-color: #e33000;
 }
 
@@ -926,11 +926,12 @@ h4 {
     }
 }
 
-.paquete,
+
+/**.paquete,
 .tabla-precio:hover {
     transform: none;
     box-shadow: none;
-}
+}**/
 
 .paquetes,
 .tabla-precio input {
@@ -941,7 +942,7 @@ h4 {
 
 .contenido-dia {
     padding: 20px;
-    /*display:none*/
+    display: none;
 }
 
 @media only screen and (min-width:768px) {
