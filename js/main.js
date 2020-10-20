@@ -19,7 +19,12 @@
         var calcular = document.getElementById('calcular');
         var errorDiv = document.getElementById('error');
         var botonRegistro = document.getElementById('btnRegistro');
-        var resultado = document.getElementById('lista-productos');
+        var lista_productos = document.getElementById('lista-productos');
+
+        //Extras
+        var camisas = document.getElementById('camisa_evento');
+        var etiquetas = document.getElementById('etiquetas');
+
 
         calcular.addEventListener('click', calcularMontos);
 
@@ -30,12 +35,52 @@
                 alert("Debes elegir un regalo!");
                 regalo.focus();
             } else {
-                var boletosDia = pase_dia.value,
-                    boletos2Dias = pase_dosdias.value,
-                    boletoCompleto = pase_completo.value;
+                var boletosDia = parseInt(pase_dia.value, 10) || 0,
+                    boletos2Dias = parseInt(pase_dosdias.value, 10) || 0,
+                    boletoCompleto = parseInt(pase_completo.value, 10) || 0,
+                    cantCamisas = parseInt(camisas.value, 10) || 0,
+                    cantEtiquetas = parseInt(etiquetas.value, 10) || 0;
 
-                var totalPagar = (boletosDia * 30) + (boletos2Dias * 45) + (boletoCompleto * 50);
-                console.log(totalPagar);
+                var totalPagar = (boletosDia * 30) + (boletos2Dias * 45) + (boletoCompleto * 50) + ((cantCamisas * 300) * .90) + (cantEtiquetas * 80);
+
+
+                var listadoProductos = [];
+
+                if (boletosDia === 1) {
+                    listadoProductos.push(boletosDia + ' Pase por día');
+                } else if (boletosDia >= 1) {
+                    listadoProductos.push(boletosDia + ' Pases por día');
+                }
+
+                if (boletoCompleto === 1) {
+                    listadoProductos.push(boletoCompleto + ' Pase Completo');
+                } else if (boletoCompleto >= 1) {
+                    listadoProductos.push(boletoCompleto + ' Pases Completos');
+                }
+
+                if (boletos2Dias === 1) {
+                    listadoProductos.push(boletos2Dias + ' Pase por 2 días');
+                } else if (boletos2Dias >= 1) {
+                    listadoProductos.push(boletos2Dias + ' Pases por 2 días');
+                }
+
+                if (cantCamisas === 1) {
+                    listadoProductos.push(cantCamisas + ' Camisa');
+                } else if (cantCamisas >= 1) {
+                    listadoProductos.push(cantCamisas + ' Camisas');
+                }
+
+                if (cantEtiquetas === 1) {
+                    listadoProductos.push(cantEtiquetas + ' Etiqueta');
+                } else if (cantEtiquetas >= 1) {
+                    listadoProductos.push(cantEtiquetas + ' Etiquetas');
+                }
+
+                lista_productos.innerHTML = '';
+
+                for (var i = 0; i < listadoProductos.length; i++) {
+                    lista_productos.innerHTML += listadoProductos[i] + '<br/>';
+                }
             }
         }
     }); //DOM CONTENT LOADED
