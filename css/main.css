@@ -509,6 +509,10 @@ menu-programa a.activo::after {
     margin-right: 10px;
 }
 
+.ocultar {
+    display: none;
+}
+
 
 /**DETALLE EVENTO**/
 
