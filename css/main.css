@@ -1019,6 +1019,16 @@ h4 {
     font-weight: normal;
 }
 
+input[disabled].button {
+    opacity: .5;
+}
+
+#error {
+    clear: both;
+    padding: 5px;
+    display: none;
+}
+
 
 /* ==========================================================================
    Helper classes
