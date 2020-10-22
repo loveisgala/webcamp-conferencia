@@ -948,6 +948,10 @@ blockquote p:before {
 
 /*Conferencias**/
 
+.conferencia .navegacion-principal .activo {
+    border-bottom: 2px solid #fe4918;
+}
+
 .galeria a {
     display: inline-block;
     margin-bottom: 3px;
