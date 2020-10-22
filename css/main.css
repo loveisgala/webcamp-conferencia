@@ -229,6 +229,63 @@ ul {
 }
 
 
+/**LETTERING**/
+
+.nombre-sitio span {
+    position: relative;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.5);
+}
+
+@media only screen and (min-width:992px) {
+    .char1 {
+        top: 20px;
+        right: 20px;
+        color: #e1e1e1;
+        text-shadow: 3px 3px 3px #fe4918!important;
+    }
+    .char2 {
+        top: 0px;
+        left: -20px;
+        color: #e1e1e1;
+        text-shadow: 3px 3px 3px #fe4918!important;
+    }
+    .char3 {
+        top: 10px;
+        right: 20px;
+        color: #e1e1e1;
+        text-shadow: 3px 3px 3px #fe4918!important;
+    }
+    .char4 {
+        top: 25px;
+        right: 10px;
+    }
+    .char5 {
+        top: 15px;
+        right: 10px;
+    }
+    .char6 {
+        top: 5px;
+        left: -10px;
+    }
+    .char7 {
+        top: 20px;
+        left: -15px;
+    }
+    .char8 {
+        top: 0px;
+        left: -5px;
+    }
+    .char9 {
+        top: 10px;
+        right: 10px;
+    }
+    .char10 {
+        top: 30px;
+        right: 20px;
+    }
+}
+
+
 /**HEADER**/
 
 .hero {
@@ -277,7 +334,6 @@ ul {
 
 .informacion-evento p {
     margin: 0;
-    display: inline;
     font-size: 20px;
     text-transform: uppercase;
 }
@@ -299,6 +355,7 @@ ul {
 
 .slogan {
     text-transform: none!important;
+    margin-top: 25px!important;
 }
 
 .slogan span {
