@@ -412,6 +412,7 @@ ul {
 
 .navegacion-principal {
     display: none;
+    width: 100%;
 }
 
 .navegacion-principal a:hover {
@@ -426,7 +427,7 @@ ul {
     text-decoration: none;
     transition: all 1s ease;
     width: 100%;
-    display: block;
+    display: inline-block;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -448,7 +449,6 @@ ul {
         display: block;
     }
     .navegacion-principal a {
-        margin-right: 10px;
         padding: 10px 10px;
         display: inline-block;
         width: auto;
