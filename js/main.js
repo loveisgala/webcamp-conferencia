@@ -161,4 +161,10 @@ $(function() {
         $(enlace).fadeIn(1000);
         return false;
     });
+
+    //Animaciones para los numeros
+    $('.resumen-evento li:nth-child(1) p').animateNumber({ number: 6 }, 4000);
+    $('.resumen-evento li:nth-child(2) p').animateNumber({ number: 15 }, 3000);
+    $('.resumen-evento li:nth-child(3) p').animateNumber({ number: 3 }, 2000);
+    $('.resumen-evento li:nth-child(4) p').animateNumber({ number: 9 }, 3500);
 });
