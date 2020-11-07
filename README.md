@@ -13,7 +13,7 @@ It has a modern design in which the following plugins were used:
 
 ## Technologies
 Created with:
-* HTML5
+* HTML5 Boilerplate
 * CSS
 * JavaScript
 * jQuery
