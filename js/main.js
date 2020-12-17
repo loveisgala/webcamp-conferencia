@@ -165,7 +165,7 @@
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
 
-    L.marker([20.674739, -103.387566]).addTo(map).bindPopup('Estas Aqui! :)').openPopup();
+    L.marker([-34.60332, -58.38157]).addTo(map).bindPopup('Estas Aqui! :)').openPopup();
 
     // .openTooltip();
   }
