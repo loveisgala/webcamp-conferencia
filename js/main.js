@@ -1,8 +1,8 @@
-(function() {
+(function () {
 	'use strict';
 	var regalo = document.getElementById('regalo');
 
-	document.addEventListener('DOMContentLoaded', function() {
+	document.addEventListener('DOMContentLoaded', function () {
 		if (document.getElementById('calcular')) {
 			var regalo = document.getElementById('regalo');
 
@@ -161,20 +161,20 @@
 
 		// Mapa
 		if (document.getElementById('mapa')) {
-			var map = L.map('mapa').setView([ 20.674739, -103.387566 ], 16);
+			var map = L.map('mapa').setView([20.674739, -103.387566], 16);
 
 			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
 
-			L.marker([ 20.674739, -103.387566 ]).addTo(map).bindPopup('GDLWebCAMP 2018').openPopup();
-			// .bindTooltip('GDLWebCamp 2018, Boletos ya disponibles')
+			L.marker([20.674739, -103.387566]).addTo(map).bindPopup('Estas Aqui! :)').openPopup();
+			
 			// .openTooltip();
 		}
 	});
 
-	$(function() {
+	$(function () {
 		// filtro pagado no pagado
 
-		$('#filtros a').on('click', function() {
+		$('#filtros a').on('click', function () {
 			$('#filtros a').removeClass('activo');
 			$(this).addClass('activo');
 			$('.registrados tbody tr').hide();
@@ -200,7 +200,7 @@
 
 		var windowHeight = $(window).height();
 		var barraAltura = $('.barra').innerHeight();
-		$(window).scroll(function() {
+		$(window).scroll(function () {
 			var scroll = $(window).scrollTop();
 			if (scroll > windowHeight) {
 				$('.barra').addClass('fixed');
@@ -213,13 +213,13 @@
 
 		// Menu Responsive
 
-		$('.menu-movil').on('click', function() {
+		$('.menu-movil').on('click', function () {
 			$('.navegacion-principal').slideToggle();
 		});
 
 		// Reaccionar a Resize en la pantalla
 		var breakpoint = 768;
-		$(window).resize(function() {
+		$(window).resize(function () {
 			if ($(document).width() >= breakpoint) {
 				$('.navegacion-principal').show();
 			} else {
@@ -231,7 +231,7 @@
 		$('.programa-evento .info-curso:first').show();
 		$('.menu-programa a:first').addClass('activo');
 
-		$('.menu-programa a').on('click', function() {
+		$('.menu-programa a').on('click', function () {
 			$('.menu-programa a').removeClass('activo');
 			$(this).addClass('activo');
 			$('.ocultar').hide();
@@ -244,7 +244,7 @@
 		var resumenLista = jQuery('.resumen-evento');
 		if (resumenLista.length > 0) {
 			$('.resumen-evento').waypoint(
-				function() {
+				function () {
 					$('.resumen-evento li:nth-child(1) p').animateNumber({ number: 6 }, 1200);
 					$('.resumen-evento li:nth-child(2) p').animateNumber({ number: 15 }, 1200);
 					$('.resumen-evento li:nth-child(3) p').animateNumber({ number: 3 }, 1500);
@@ -258,7 +258,7 @@
 
 		//Cuenta Regresiva
 
-		$('.cuenta-regresiva').countdown('2017/12/10 09:00:00', function(event) {
+		$('.cuenta-regresiva').countdown('2020/12/10 09:00:00', function(event) {
 			$('#dias').html(event.strftime('%D'));
 			$('#horas').html(event.strftime('%H'));
 			$('#minutos').html(event.strftime('%M'));
@@ -270,4 +270,6 @@
 		$('.invitado-info').colorbox({ inline: true, width: '50%' });
 		$('.boton_newsletter').colorbox({ inline: true, width: '50%' });
 	});
+
+	
 })();

@@ -13,12 +13,14 @@
 
     <link rel="stylesheet" href="css/normalize.css">
     <script src="https://kit.fontawesome.com/e314ed54a5.js" crossorigin="anonymous"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald&family=PT+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Oswald&family=PT+Sans&display=swap"
+        rel="stylesheet">
 
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
     <link rel="stylesheet" href="css/main.css">
 
     <meta name="theme-color" content="#fafafa">
+
 </head>
 
 <body>
@@ -69,7 +71,7 @@
             <nav class="navegacion-principal">
                 <a href="/conferencia.html" class="activo">Conferencias</a>
                 <a href="#">Calendario</a>
-                <a href="#">Invitados</a>
+                <a href="#invitado">Invitados</a>
                 <a href="/registro.html">Reservaciones</a>
             </nav>
         </div>
@@ -78,13 +80,15 @@
     <!--SECCION-->
     <section class="seccion contenedor">
         <h2>La mejor conferencia de Diseño Web en Español</h2>
-        <p class="seccion-p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel error facilis temporibus hic consequatur accusantium, cupiditate alias quam, consectetur vero harum recusandae esse eveniet voluptas at consequuntur blanditiis, aliquid officia?</p>
+        <p class="seccion-p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel error facilis temporibus hic
+            consequatur accusantium, cupiditate alias quam, consectetur vero harum recusandae esse eveniet voluptas at
+            consequuntur blanditiis, aliquid officia?</p>
     </section>
 
     <!--PROGRAMA-->
     <section class="programa">
         <div class="contenedor-video">
-            <video autoplay poster="bg-talleres.jpg">
+            <video autoplay poster="/img/bg-talleres.jpg">
                 <source src="/video/video.mp4" type="video/mp4">
                 <source src="/video/video.webm" type="video/webm">
                 <source src="/video/video.ogv" type="video/ogv">
@@ -219,16 +223,16 @@
         <div class="contenedor">
             <ul class="resumen-evento">
                 <li>
-                    <p class="numero"></p> Invitados
+                    <p class="numero">6</p> Invitados
                 </li>
                 <li>
-                    <p class="numero"></p> Talleres
+                    <p class="numero">15</p> Talleres
                 </li>
                 <li>
-                    <p class="numero"></p> Días
+                    <p class="numero">3</p> Días
                 </li>
                 <li>
-                    <p class="numero"></p> Conferencias
+                    <p class="numero">9</p> Conferencias
                 </li>
             </ul>
         </div>
@@ -290,7 +294,9 @@
         <div class="testimoniales contenedor clearfix">
             <div class="testimonial">
                 <blockquote>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt labore, expedita unde eligendi totam sit quia, molestiae beatae voluptates amet, quam dignissimos hic alias! Quia odio repudiandae reiciendis! Accusamus, architecto!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt labore, expedita unde eligendi
+                        totam sit quia, molestiae beatae voluptates amet, quam dignissimos hic alias! Quia odio
+                        repudiandae reiciendis! Accusamus, architecto!</p>
                     <footer class="info-testimonial clearfix">
                         <img src="/img/testimonial.jpg" alt="imagen testimonial">
                         <cite>Oswaldo Escobelo <span>Diseñador en @Prisma</span></cite>
@@ -299,7 +305,9 @@
             </div>
             <div class="testimonial">
                 <blockquote>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt labore, expedita unde eligendi totam sit quia, molestiae beatae voluptates amet, quam dignissimos hic alias! Quia odio repudiandae reiciendis! Accusamus, architecto!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt labore, expedita unde eligendi
+                        totam sit quia, molestiae beatae voluptates amet, quam dignissimos hic alias! Quia odio
+                        repudiandae reiciendis! Accusamus, architecto!</p>
                     <footer class="info-testimonial clearfix">
                         <img src="/img/testimonial.jpg" alt="imagen testimonial">
                         <cite>Oswaldo Escobelo <span>Diseñador en @Prisma</span></cite>
@@ -308,7 +316,9 @@
             </div>
             <div class="testimonial">
                 <blockquote>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt labore, expedita unde eligendi totam sit quia, molestiae beatae voluptates amet, quam dignissimos hic alias! Quia odio repudiandae reiciendis! Accusamus, architecto!</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt labore, expedita unde eligendi
+                        totam sit quia, molestiae beatae voluptates amet, quam dignissimos hic alias! Quia odio
+                        repudiandae reiciendis! Accusamus, architecto!</p>
                     <footer class="info-testimonial clearfix">
                         <img src="/img/testimonial.jpg" alt="imagen testimonial">
                         <cite>Oswaldo Escobelo <span>Diseñador en @Prisma</span></cite>
@@ -323,14 +333,14 @@
         <div class="contenido contenedor">
             <p>Regístrate al Newsletter:</p>
             <h3>gdlwebcamp</h3>
-            <a href="#" class="button transparente">Registro</a>
+            <a href="registro.html" class="button transparente">Registro</a>
         </div>
     </div>
 
     <!--CONTADOR-->
     <section class="seccion">
         <h2>Faltan</h2>
-        <div class="cuenta-regresiva contendor">
+        <div class="cuenta-regresiva contenedor">
             <ul class="clearfix">
                 <li>
                     <p id="dias" class="numero"></p> días
@@ -348,17 +358,24 @@
         </div>
     </section>
     <!--FOOTER-->
+
     <footer class="site-footer">
         <div class="contenedor clearfix">
             <div class="footer-informacion">
                 <h3>Sobre <span>gdlwebcamp</span></h3>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere ad cumque ipsum, rem qui quam iusto incidunt magnam harum consectetur sed maiores cupiditate architecto eligendi voluptas officiis labore dolore eius!</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facere ad cumque ipsum, rem qui quam iusto
+                    incidunt magnam harum consectetur sed maiores cupiditate architecto eligendi voluptas officiis
+                    labore dolore eius!</p>
             </div>
             <div class="ultimos-tweets">
                 <h3>Últimos <span>tweets</span></h3>
                 <ul>
-                    <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere laboriosam esse rem debitis quia vero distinctio et officiis a quis exercitationem fugit iusto, dicta excepturi repellendus mollitia provident animi aspernatur.</li>
-                    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus magni ullam libero fugit, laudantium aliquam numquam facilis mollitia eveniet sed animi nulla unde, rerum quo id iure et error! Nostrum?</li>
+                    <li>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere laboriosam esse rem debitis
+                        quia vero distinctio et officiis a quis exercitationem fugit iusto, dicta excepturi repellendus
+                        mollitia provident animi aspernatur.</li>
+                    <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus magni ullam libero fugit,
+                        laudantium aliquam numquam facilis mollitia eveniet sed animi nulla unde, rerum quo id iure et
+                        error! Nostrum?</li>
                 </ul>
             </div>
             <div class="menu">
@@ -377,8 +394,10 @@
             Todos los derechos reservados GDLWEBCAMP 2020.
         </p>
     </footer>
+
     <script src="js/vendor/modernizr-3.8.0.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
     <script>
         window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')
     </script>
@@ -391,7 +410,7 @@
 
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
     <script>
-        window.ga = function() {
+        window.ga = function () {
             ga.q.push(arguments)
         };
         ga.q = [];
@@ -401,6 +420,7 @@
         ga('send', 'pageview')
     </script>
     <script src="https://www.google-analytics.com/analytics.js" async></script>
+
 </body>
 
 </html>
