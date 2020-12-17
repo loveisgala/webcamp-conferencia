@@ -160,12 +160,13 @@
 		}
 
 		// Mapa
-		if (document.getElementById('mapa')) {
-			var map = L.map('mapa').setView([-34.60332, -58.38157], 16);
-
-			L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(map);
-
-			L.marker([20.674739, -103.387566]).addTo(map).bindPopup('Estas Aqui! :)').openPopup();
+		 var map = L.map('mapa').setView([-34.60389, -58.381568], 13);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+        L.marker([-34.60389, -58.381568]).addTo(map)
+            .bindPopup('Estás aquí! :)')
+            .openPopup();
 			
 			// .openTooltip();
 		}
